@@ -18,8 +18,10 @@
 
 #pragma once
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include <JuceHeader.h>
 #include "AudioThumbnailComp.h"
+
+using namespace juce;
 
 class AudioFilePlayerProcessor :
     public AudioProcessor

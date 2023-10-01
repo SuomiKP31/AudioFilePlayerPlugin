@@ -123,7 +123,7 @@ void AudioFilePlayerProcessor::getStateInformation(MemoryBlock& destData)
 
 void AudioFilePlayerProcessor::setStateInformation(const void* data, int sizeInBytes)
 {
-    ScopedPointer<XmlElement> xmlState(getXmlFromBinary(data, sizeInBytes));
+    std::unique_ptr<XmlElement> xmlState(getXmlFromBinary(data, sizeInBytes));
 
     if (xmlState != nullptr)
     {

@@ -18,9 +18,11 @@
 
 #pragma once
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include <JuceHeader.h>
 #include "PluginProcessor.h"
 
+
+using namespace juce;
 class AudioFilePlayerEditor :
     public AudioProcessorEditor,
     private Button::Listener,

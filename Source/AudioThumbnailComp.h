@@ -18,7 +18,9 @@
 
 #pragma once
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include <JuceHeader.h>
+
+using namespace juce;
 
 class AudioThumbnailComp :
     public Component,
