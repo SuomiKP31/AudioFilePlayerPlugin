@@ -25,7 +25,7 @@ AudioFilePlayerProcessor::AudioFilePlayerProcessor() :
     readAheadThread("transport read ahead")
 {
     formatManager.registerBasicFormats();
-    readAheadThread.startThread(3);
+    readAheadThread.startThread(juce::Thread::Priority::highest);
 }
 
 AudioFilePlayerProcessor::~AudioFilePlayerProcessor()
